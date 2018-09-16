@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interactive Student List</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <main>
+        <section id="buttons">
+            <h1>Interactive Student List</h1>
+            <p>Frontenders 3.semester 2018</p>
+            <div id="sorting">
+                Sort by:
+                <button class="sorting-design">All</button>
+                <button id="sort_firstname" class="sorting-design">First name</button>
+                <button id="sort_lastname" class="sorting-design">Last name</button>
+            </div>
+        </section>
+        <table id="studentlist">
+            <thead>
+                <tr>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Details</th>
+                    <th>Delete</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+
+            </tbody>
+        </table>
+        <template id="student_template">
+            <tr>
+                <td data-firstname>FIRSTNAME</td>
+                <td data-lastname>LASTNAME</td>
+                <td><button class="img-buttons"><img src="png/question.jpg" class="img-size"></button></td>
+                <td><button class="img-buttons"><img src="png/delete.jpg" class="img-size"></button></td>
+            </tr>
+        </template>
+    </main>
+    <script src="frontend.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
